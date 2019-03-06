@@ -1,0 +1,8 @@
+cmd create area 
+cmd add area let %allowed% = array(\"VesperSoup48737\", \"ATskullXD5\", \"PotatoSheepMilk\", \"DRCH16\", \"EchoKing13\", \"Rattious\") 
+cmd add area if %p% in %allowed% then goto 5 
+cmd add area message %p% §cYou are not allowed to use this command! 
+cmd add area exit 
+cmd add area if varset(%args%[1]) then let %cmd% = join(%args%[1+], \" \") 
+cmd add area if varset(%cmd%) = %false% then /area 
+cmd add area if varset(%cmd%) then /area %cmd%
