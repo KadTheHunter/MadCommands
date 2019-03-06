@@ -14,3 +14,4 @@ cmd add rpranks if varset(%response%) then goto 14
 cmd add rpranks exit 
 cmd add rpranks let %rank% = join(%response%, \" \")
 cmd add rpranks asop /setprefix %rank%
+
