@@ -1,0 +1,6 @@
+cmd create promote Promote someone to Citizen
+cmd add promote let %skip% = array(\"Owner\", \"CoOwner\", \"Admin\", \"Moderator\", \"Helper\", \"Builder\")
+cmd add promote let %target% = %args%[1]
+cmd add promote if playergroup(%target%) in %skip% then exit
+cmd add promote ascon setgroup %target% Member
+cmd add promote message %target% §f§lYou are now a §b§lCitizen§f!§r
