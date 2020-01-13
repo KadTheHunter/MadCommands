@@ -1,4 +1,4 @@
-cmd create banhammer
+cmd create banhammer ISB Tool #1 | Not for Player usage.
 cmd add banhammer let %id% = %args%[4]
 cmd add banhammer if %id% != 1 then exit
 cmd add banhammer let %killer% = %args%[3]
