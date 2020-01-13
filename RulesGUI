@@ -1,0 +1,34 @@
+cmd create rl Server Rules created by punjana12
+cmd add rl %gui%[\"type\"] = \"form\"
+cmd add rl %gui%[\"title\"] = \"§6Rules by punjana12\"
+cmd add rl %gui%[\"content\"] = \"Click to open\"
+cmd add rl %b0%[\"text\"] = \"§bGeneral\"
+cmd add rl %b1%[\"text\"] = \"§eChat\"
+cmd add rl %b2%[\"text\"] = \"§bHacking/Cheating\"
+cmd add rl %bs%[] = %b0%
+cmd add rl %bs%[] = %b1%
+cmd add rl %bs%[] = %b2%
+cmd add rl %gui%[\"buttons\"] = %bs%
+cmd add rl %res% = dialog(%p%, %gui%)
+cmd add rl if %res% = 0 then goto 16
+cmd add rl if %res% = 1 then goto 22
+cmd add rl if %res% = 1 then goto 28
+cmd add rl exit
+cmd add rl ascon title %p% §6General
+cmd add rl message %p% 1.Do not direspect players
+cmd add rl message %p% 2.Do not direspect staff
+cmd add rl message %p% 3.Do not break the rules
+cmd add rl message %p% 4.Have Fun!!!
+cmd add rl exit
+cmd add rl ascon title %p% §6Chat
+cmd add rl message %p% 1.Do not swear
+cmd add rl message %p% 2.Do not say anything to harm others
+cmd add rl message %p% 3.Do not use all caps
+cmd add rl message %p% 4.Do not spam
+cmd add rl exit
+cmd add rl ascon title %p% §6Hacking/Cheating
+cmd add rl message %p% 1.Do not Hack
+cmd add rl message %p% 2.Do not use xray texture packs
+cmd add rl message %p% 3.Do not frame others of hacking
+cmd add rl message %p% 4.Do not spam that there is a hacker
+cmd add rl exit

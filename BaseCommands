@@ -1,0 +1,36 @@
+cmd create hub
+cmd add hub move %p% world 262 13 197 
+cmd add hub message %p% §bWelcome back to the Hub!
+cmd add hub exit
+
+
+
+cmd create gmc Changes you or a player into creative mode | /gmc <player>
+cmd add gmc let %player% = %p%
+cmd add gmc if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gmc /gamemode c %player%
+cmd add gmc exit
+
+
+
+cmd create gms Changes you or a player into survival mode | /gms <player>
+cmd add gms let %player% = %p%
+cmd add gms if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gms /gamemode s %player%
+cmd add gms exit
+
+
+
+cmd create gmspc Changes you or a player into spectator mode | /gmspc <player>
+cmd add gmspc let %player% = %p%
+cmd add gmspc if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gmspc /gamemode 3 %player%
+cmd add gmspc exit
+
+
+
+cmd create gma Changes you or a player into adventure mode | /gma <player>
+cmd add gma let %player% = %p%
+cmd add gma if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gma /gamemode 2 %player%
+cmd add gma exit

@@ -1,0 +1,71 @@
+cmd add invsee let %allowed% = array(\"???\")
+cmd add invsee if %p% in %allowed% then goto 5
+cmd add invsee message %p% §aYou do not have permission to use this command!
+cmd add invsee exit
+cmd add invsee if %args%[1] = \"modify\" then goto 52
+cmd add invsee load %inven%
+cmd add invsee load %plarmor%
+cmd add invsee load %invsee%
+cmd add invsee load %invplayer%
+cmd add invsee if varset(%invsee%[%p%]) = %false% then goto 12
+cmd add invsee if %invsee%[%p%] = 1 then goto 38
+cmd add invsee let %gui%["type"] = \"custom_form\"
+cmd add invsee let %gui%["title"] = \"Player:\"
+cmd add invsee let %drop%["type"] = \"dropdown\"
+cmd add invsee let %drop%["text"] = \"\\nChoose a player\"
+cmd add invsee let %options% = onlineplayers()
+cmd add invsee let %drop%["options"] = %options%
+cmd add invsee let %content%[] = %drop%
+cmd add invsee let %gui%["content"] = %content%
+cmd add invsee let %out% = dialog(%p%, %gui%)
+cmd add invsee if %out% = %false% then exit
+cmd add invsee let %invsee%[%p%] = 1
+cmd add invsee save %invsee%
+cmd add invsee let %o% = %out%[0]
+cmd add invsee let %player% = %options%[%o%]
+cmd add invsee let %inv% = playerinventory(%player%)
+cmd add invsee let %inven%[%p%] = playerinventory(%p%)
+cmd add invsee let %armor% = playerarmor(%player%)
+cmd add invsee let %plarmor%[%p%] = playerarmor(%p%)
+cmd add invsee let %invplayer%[%p%] = %player%
+cmd add invsee save %invplayer%
+cmd add invsee save %plarmor%
+cmd add invsee save %inven%
+cmd add invsee carry %p% %inv%
+cmd add invsee wear %p% %armor%
+cmd add invsee message %p% §aYou are now seeing %player%'s inventory! Do /invsee to go back to your original inventory!
+cmd add invsee exit
+cmd add invsee let %invsee%[%p%] = 0
+cmd add invsee save %invsee%
+cmd add invsee let %inv% = %inven%[%p%]
+cmd add invsee carry %p% %inv%
+cmd add invsee let %armor% = %plarmor%[%p%]
+cmd add invsee wear %p% %armor%
+cmd add invsee let %plarmor%[%p%] = 0
+cmd add invsee let %inven%[%p%] = 0
+cmd add invsee let %invplayer%[%p%] =
+cmd add invsee save %invplayer%
+cmd add invsee save %inven%
+cmd add invsee save %plarmor%
+cmd add invsee message %p% §aYou are now back to your original inventory!
+cmd add invsee exit
+cmd add invsee load %inven%
+cmd add invsee load %plarmor%
+cmd add invsee load %invsee%
+cmd add invsee load %invplayer%
+cmd add invsee let %player% = %invplayer%[%p%]
+cmd add invsee if varset(%invplayer%[%p%]) then goto 60
+cmd add invsee message %p% §8[§c!§8] §cYou are not looking into anyones inventory!
+cmd add invsee exit
+cmd add invsee let %inv% = playerinventory(%p%)
+cmd add invsee let %armor% = playerarmor(%p%)
+cmd add invsee wear %player% %armor%
+cmd add invsee carry %player% %inv%
+cmd add invsee message %player% §8[§c!§8] §3%p% modified your inventory!
+cmd add invsee message %p% §a%player%'s inventory was successfully modified!
+cmd add invsee goto 38
+
+Commands:
+/invsee - Don't type in name
+/invsee - After you choose a player and you want to stop seeing their inventory
+/invsee modify - Use after you modified their inventory
