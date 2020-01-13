@@ -1,34 +1,35 @@
-cmd create rl Server Rules created by punjana12
-cmd add rl %gui%[\"type\"] = \"form\"
-cmd add rl %gui%[\"title\"] = \"§6Rules by punjana12\"
-cmd add rl %gui%[\"content\"] = \"Click to open\"
-cmd add rl %b0%[\"text\"] = \"§bGeneral\"
-cmd add rl %b1%[\"text\"] = \"§eChat\"
-cmd add rl %b2%[\"text\"] = \"§bHacking/Cheating\"
-cmd add rl %bs%[] = %b0%
-cmd add rl %bs%[] = %b1%
-cmd add rl %bs%[] = %b2%
-cmd add rl %gui%[\"buttons\"] = %bs%
-cmd add rl %res% = dialog(%p%, %gui%)
-cmd add rl if %res% = 0 then goto 16
-cmd add rl if %res% = 1 then goto 22
-cmd add rl if %res% = 1 then goto 28
-cmd add rl exit
-cmd add rl ascon title %p% §6General
-cmd add rl message %p% 1.Do not direspect players
-cmd add rl message %p% 2.Do not direspect staff
-cmd add rl message %p% 3.Do not break the rules
-cmd add rl message %p% 4.Have Fun!!!
-cmd add rl exit
-cmd add rl ascon title %p% §6Chat
-cmd add rl message %p% 1.Do not swear
-cmd add rl message %p% 2.Do not say anything to harm others
-cmd add rl message %p% 3.Do not use all caps
-cmd add rl message %p% 4.Do not spam
-cmd add rl exit
-cmd add rl ascon title %p% §6Hacking/Cheating
-cmd add rl message %p% 1.Do not Hack
-cmd add rl message %p% 2.Do not use xray texture packs
-cmd add rl message %p% 3.Do not frame others of hacking
-cmd add rl message %p% 4.Do not spam that there is a hacker
-cmd add rl exit
+cmd create rules Server Rules
+cmd add rules %gui%[\"type\"] = \"form\"
+cmd add rules %gui%[\"title\"] = \"§6Rules\"
+cmd add reles %gui%[\"content\"] = \"Click to open | GUI developed by punjana12\"
+cmd add rules %b0%[\"text\"] = \"§bGeneral\"
+cmd add rules %b1%[\"text\"] = \"§eChat\"
+cmd add rules %b2%[\"text\"] = \"§dRolePlay\"
+cmd add rules %bs%[] = %b0%
+cmd add rules %bs%[] = %b1%
+cmd add rules %bs%[] = %b2%
+cmd add rules %gui%[\"buttons\"] = %bs%
+cmd add rules %res% = dialog(%p%, %gui%)
+cmd add rules if %res% = 0 then goto 16
+cmd add rules if %res% = 1 then goto 23
+cmd add rules if %res% = 1 then goto 28
+cmd add rules exit
+cmd add rules message %p% §6General
+cmd add rules message %p% 1. Do not Grief.
+cmd add rules message %p% 2. Do not cause, start, spread, or continue Drama.
+cmd add rules message %p% 3. Do not build or speak [of] anything NSFW/18+.
+cmd add rules message %p% 4. Do not ask for OP/Ranks/Perms.
+cmd add rules message %p% 5. Do not Advertise anything other than this servers Discord and Social Media invites and links.
+cmd add rules exit
+cmd add rules message %p% §6Chat
+cmd add rules message %p% 1. Do not use uncensored curse words.
+cmd add rules message %p% 2. Do not talk about any illegal items or activities.
+cmd add rules message %p% 3. Do not use all caps.
+cmd add rules message %p% 4. Do not spam.
+cmd add rules exit
+cmd add rules message %p% §6RolePlay
+cmd add rules message %p% 1. Follow all other rules in-RolePlay.
+cmd add rules message %p% 2. Do not whine if excluded from a RolePlay, or RolePlay Clan.
+cmd add rules message %p% 3. Do not use RolePlay as a basis or excuse for illegal activities.
+cmd add rules message %p% 4. Do not ask Staff to settle an in-RolePlay issue. 
+cmd add rules exit

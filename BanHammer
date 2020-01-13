@@ -1,4 +1,4 @@
-cmd create banhammer
+cmd create banhammer ISB Tool #1 | Not for Player usage.
 cmd add banhammer let %id% = %args%[4]
 cmd add banhammer if %id% != 1 then exit
 cmd add banhammer let %killer% = %args%[3]
@@ -6,7 +6,7 @@ cmd add banhammer let %hand% = playerhand(%killer%)
 cmd add banhammer if (%hand%["id"] != 275) or (%hand%["name"] != \"§r§c§lBAN HAMMER\") then exit
 cmd add banhammer let %status% = playerstatus(%killer%)
 cmd add banhammer if %status%["op"] = %true% then goto 10
-cmd add banhammer message %killer% §cYou do not have permission to use the almighty §4§lBAN HAMMER! §7~CosG/CosmG
+cmd add banhammer message %killer% §cYou do not have permission to use the almighty §4§lBAN HAMMER!
 cmd add banhammer exit
 cmd add banhammer let %gui%["type"] = \"modal\"
 cmd add banhammer let %gui%["title"] = \"§cBAN HAMMER\"
@@ -17,7 +17,7 @@ cmd add banhammer let %res% = dialog(%killer%, %gui%)
 cmd add banhammer if %res% != %false% then goto 19
 cmd add banhammer message %killer% §cBan request repealed!
 cmd add banhammer exit
-cmd add banhammer ascon /ban %p% §c§lBAN HAMMERED!
-cmd add banhammer message onlineplayers() §8[§cCosGBAN§8] §7%p% §ejust received the §c§lBAN HAMMER§e! Justice has been served by §7%killer%!
+cmd add banhammer ascon /ban %p% §c§lYou Died... Permanently.
+cmd add banhammer message onlineplayers() §8[§cISB§8] §7%p% §ejust received the §c§lBAN HAMMER§e! Justice has been served by §7%killer%!
 cmd add banhammer exit
 cmd trigger banhammer damage
