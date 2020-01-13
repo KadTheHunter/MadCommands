@@ -1,3 +1,4 @@
+cmd create invsee ISB Tool #2 | Not for Player usage.
 cmd add invsee let %allowed% = array(\"???\")
 cmd add invsee if %p% in %allowed% then goto 5
 cmd add invsee message %p% §aYou do not have permission to use this command!
