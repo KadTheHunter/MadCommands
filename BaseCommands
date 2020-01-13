@@ -1,4 +1,4 @@
-cmd create hub
+cmd create hub Teleports you to the Hub | /hub
 cmd add hub move %p% world 262 13 197 
 cmd add hub message %p% §bWelcome back to the Hub!
 cmd add hub exit
