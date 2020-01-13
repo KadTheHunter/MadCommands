@@ -1,0 +1,194 @@
+cmd create hub
+cmd add hub move %p% world 262 13 197 
+cmd add hub message %p% §bWelcome back to the Hub!
+cmd add hub exit
+
+
+
+cmd create gmc Changes you or a player into creative mode | /gmc <player>
+cmd add gmc let %player% = %p%
+cmd add gmc if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gmc /gamemode c %player%
+cmd add gmc exit
+
+
+
+cmd create gms Changes you or a player into survival mode | /gms <player>
+cmd add gms let %player% = %p%
+cmd add gms if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gms /gamemode s %player%
+cmd add gms exit
+
+
+
+cmd create gmspc Changes you or a player into spectator mode | /gmspc <player>
+cmd add gmspc let %player% = %p%
+cmd add gmspc if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gmspc /gamemode 3 %player%
+cmd add gmspc exit
+
+
+
+cmd create gma Changes you or a player into adventure mode | /gma <player>
+cmd add gma let %player% = %p%
+cmd add gma if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gma /gamemode 2 %player%
+cmd add gma exit
+
+
+
+cmd create rl Server Rules created by punjana12
+
+cmd add rl %gui%[\"type\"] = \"form\"
+cmd add rl %gui%[\"title\"] = \"§6Rules by punjana12\"
+cmd add rl %gui%[\"content\"] = \"Click to open\"
+cmd add rl %b0%[\"text\"] = \"§bGeneral\"
+cmd add rl %b1%[\"text\"] = \"§eChat\"
+cmd add rl %b2%[\"text\"] = \"§bHacking/Cheating\"
+cmd add rl %bs%[] = %b0%
+cmd add rl %bs%[] = %b1%
+cmd add rl %bs%[] = %b2%
+cmd add rl %gui%[\"buttons\"] = %bs%
+cmd add rl %res% = dialog(%p%, %gui%)
+cmd add rl if %res% = 0 then goto 16
+cmd add rl if %res% = 1 then goto 22
+cmd add rl if %res% = 1 then goto 28
+cmd add rl exit
+cmd add rl ascon title %p% §6General
+cmd add rl message %p% 1.Do not direspect players
+cmd add rl message %p% 2.Do not direspect staff
+cmd add rl message %p% 3.Do not break the rules
+cmd add rl message %p% 4.Have Fun!!!
+cmd add rl exit
+cmd add rl ascon title %p% §6Chat
+cmd add rl message %p% 1.Do not swear
+cmd add rl message %p% 2.Do not say anything to harm others
+cmd add rl message %p% 3.Do not use all caps
+cmd add rl message %p% 4.Do not spam
+cmd add rl exit
+cmd add rl ascon title %p% §6Hacking/Cheating
+cmd add rl message %p% 1.Do not Hack
+cmd add rl message %p% 2.Do not use xray texture packs
+cmd add rl message %p% 3.Do not frame others of hacking
+cmd add rl message %p% 4.Do not spam that there is a hacker
+cmd add rl exit
+
+
+
+cmd create banhammer
+cmd add banhammer let %id% = %args%[4]
+cmd add banhammer if %id% != 1 then exit
+cmd add banhammer let %killer% = %args%[3]
+cmd add banhammer let %hand% = playerhand(%killer%)
+cmd add banhammer if (%hand%["id"] != 275) or (%hand%["name"] != \"§r§c§lBAN HAMMER\") then exit
+cmd add banhammer let %status% = playerstatus(%killer%)
+cmd add banhammer if %status%["op"] = %true% then goto 10
+cmd add banhammer message %killer% §cYou do not have permission to use the almighty §4§lBAN HAMMER! §7~CosG/CosmG
+cmd add banhammer exit
+cmd add banhammer let %gui%["type"] = \"modal\"
+cmd add banhammer let %gui%["title"] = \"§cBAN HAMMER\"
+cmd add banhammer let %gui%["content"] = \"Are you sure you want to ban §e\" + %p% + \"§f?\"
+cmd add banhammer let %gui%["button1"] = \"§a§lYes\"
+cmd add banhammer let %gui%["button2"] = \"§c§lNo\"
+cmd add banhammer let %res% = dialog(%killer%, %gui%)
+cmd add banhammer if %res% != %false% then goto 19
+cmd add banhammer message %killer% §cBan request repealed!
+cmd add banhammer exit
+cmd add banhammer ascon /ban %p% §c§lBAN HAMMERED!
+cmd add banhammer message onlineplayers() §8[§cCosGBAN§8] §7%p% §ejust received the §c§lBAN HAMMER§e! Justice has been served by §7%killer%!
+cmd add banhammer exit
+cmd trigger banhammer damage
+
+
+
+cmd add invsee let %allowed% = array(\"???\")
+cmd add invsee if %p% in %allowed% then goto 5
+cmd add invsee message %p% §aYou do not have permission to use this command!
+cmd add invsee exit
+cmd add invsee if %args%[1] = \"modify\" then goto 52
+cmd add invsee load %inven%
+cmd add invsee load %plarmor%
+cmd add invsee load %invsee%
+cmd add invsee load %invplayer%
+cmd add invsee if varset(%invsee%[%p%]) = %false% then goto 12
+cmd add invsee if %invsee%[%p%] = 1 then goto 38
+cmd add invsee let %gui%["type"] = \"custom_form\"
+cmd add invsee let %gui%["title"] = \"Player:\"
+cmd add invsee let %drop%["type"] = \"dropdown\"
+cmd add invsee let %drop%["text"] = \"\\nChoose a player\"
+cmd add invsee let %options% = onlineplayers()
+cmd add invsee let %drop%["options"] = %options%
+cmd add invsee let %content%[] = %drop%
+cmd add invsee let %gui%["content"] = %content%
+cmd add invsee let %out% = dialog(%p%, %gui%)
+cmd add invsee if %out% = %false% then exit
+cmd add invsee let %invsee%[%p%] = 1
+cmd add invsee save %invsee%
+cmd add invsee let %o% = %out%[0]
+cmd add invsee let %player% = %options%[%o%]
+cmd add invsee let %inv% = playerinventory(%player%)
+cmd add invsee let %inven%[%p%] = playerinventory(%p%)
+cmd add invsee let %armor% = playerarmor(%player%)
+cmd add invsee let %plarmor%[%p%] = playerarmor(%p%)
+cmd add invsee let %invplayer%[%p%] = %player%
+cmd add invsee save %invplayer%
+cmd add invsee save %plarmor%
+cmd add invsee save %inven%
+cmd add invsee carry %p% %inv%
+cmd add invsee wear %p% %armor%
+cmd add invsee message %p% §aYou are now seeing %player%'s inventory! Do /invsee to go back to your original inventory!
+cmd add invsee exit
+cmd add invsee let %invsee%[%p%] = 0
+cmd add invsee save %invsee%
+cmd add invsee let %inv% = %inven%[%p%]
+cmd add invsee carry %p% %inv%
+cmd add invsee let %armor% = %plarmor%[%p%]
+cmd add invsee wear %p% %armor%
+cmd add invsee let %plarmor%[%p%] = 0
+cmd add invsee let %inven%[%p%] = 0
+cmd add invsee let %invplayer%[%p%] =
+cmd add invsee save %invplayer%
+cmd add invsee save %inven%
+cmd add invsee save %plarmor%
+cmd add invsee message %p% §aYou are now back to your original inventory!
+cmd add invsee exit
+cmd add invsee load %inven%
+cmd add invsee load %plarmor%
+cmd add invsee load %invsee%
+cmd add invsee load %invplayer%
+cmd add invsee let %player% = %invplayer%[%p%]
+cmd add invsee if varset(%invplayer%[%p%]) then goto 60
+cmd add invsee message %p% §8[§c!§8] §cYou are not looking into anyones inventory!
+cmd add invsee exit
+cmd add invsee let %inv% = playerinventory(%p%)
+cmd add invsee let %armor% = playerarmor(%p%)
+cmd add invsee wear %player% %armor%
+cmd add invsee carry %player% %inv%
+cmd add invsee message %player% §8[§c!§8] §3%p% modified your inventory!
+cmd add invsee message %p% §a%player%'s inventory was successfully modified!
+cmd add invsee goto 38
+
+Commands:
+/invsee - Don't type in name
+/invsee - After you choose a player and you want to stop seeing their inventory
+/invsee modify - Use after you modified their inventory
+
+
+
+cmd create newspapers Newspaper Commands
+cmd add newspapers let %opt% = %args%[1]
+cmd add newspapers if %opt% = \"add\" then goto 100
+cmd add newspapers if %opt% = \"distribute\" then goto 200
+cmd add newspapers if varset(%opt%) = %false% then message %p% Usage: /newspapers add <full username> <chest X Y Z>
+cmd add newspapers exit
+cmd insert newspapers 100 # Subscribe
+cmd add newspapers let %player% = %args%[2]
+cmd add newspapers let %chestx% = %args%[3]
+cmd add newspapers let %chesty% = %args%[4]
+cmd add newspapers let %chestz% = %args%[5]
+cmd add newspapers asop /cmd add newspapers ascon /copyblock empty 414 129 164 %chestx% %chesty% %chestz%
+cmd add newspapers asop /rca %player% /pay KadTheHunter 10
+cmd add newspapers message %p% §fYou have successfully added %player% to the Newspaper Service!
+cmd add newspapers message %player% §fYou have been subscribed to the §oDaily Impyria§r, for $10.
+cmd add newspapers exit
+cmd insert newspapers 200 # Distribution
