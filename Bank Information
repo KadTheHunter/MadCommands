@@ -1,3 +1,4 @@
+cmd create bankfo Shows information about your Bank Balance.
 cmd add bankfo message %p% §b§l- - - - - - - - - -§r
 cmd add bankfo message %p% §4§o§lBank Of Impyria§r
 cmd add bankfo message %p% §0• §6a §cGalactic Banking Clan §6company §0•§r
