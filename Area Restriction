@@ -1,5 +1,5 @@
 cmd create area 
-cmd add area let %allowed% = array(\"VesperSoup48737\", \"ATskullXD5\", \"PotatoSheepMilk\", \"DRCH16\", \"EchoKing13\", \"Rattious\") 
+cmd add area let %allowed% = array(\"KadTheHunter\", \"Beccaaaxoxo\", \"EllisIsMe\") 
 cmd add area if %p% in %allowed% then goto 5 
 cmd add area message %p% §cYou are not allowed to use this command! 
 cmd add area exit 
