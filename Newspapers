@@ -15,3 +15,21 @@ cmd add newspapers message %p% §fYou have successfully added %player% to the Ne
 cmd add newspapers message %player% §fYou have been subscribed to the §oDaily Impyria§r, for $10.
 cmd add newspapers exit
 cmd insert newspapers 200 # Distribution
+
+
+
+NEXT SECTION IS HIGHLY EXPERIMENTAL DO NOT ATTEMPT TO USE
+
+
+
+cmd create newspapers Newspaper Commands
+cmd add newspapers let %aog% = %args%[1]
+cmd add newspapers if %aog% = \"set\" goto 100
+cmd add newspapers if %aog% = \"get\" goto 200
+cmd add newspapers exit
+cmd insert newspapers 100 # set
+cmd add newspapers let %status% = playerstatus(%p%)
+cmd add newspapers if %status%["op"] = %true% then goto 105
+cmd add newspapers message %p% §Nice try bozo. Only Ministers can update the Newspaper itself!
+cmd add newspapers exit
+cmd add newspapers 
