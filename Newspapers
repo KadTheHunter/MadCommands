@@ -1,18 +1,23 @@
 cmd create newspapers Newspaper Commands
+cmd add newspapers let %status% = playerstatus(%p%)
+cmd add newspapers if %status%["op"] = %true% then goto 5
+cmd add newspapers message %p% §4Nice try %p%. Only Ministers can add or distribute the Newspapers!
+cmd add newspapers exit
 cmd add newspapers let %opt% = %args%[1]
 cmd add newspapers if %opt% = \"add\" then goto 100
 cmd add newspapers if %opt% = \"distribute\" then goto 200
 cmd add newspapers if varset(%opt%) = %false% then message %p% Usage: /newspapers add <full username> <chest X Y Z>
+cmd add newspapers if varset(%opt%) = %false% then message %p% or
+cmd add newspapers if varset(%opt%) = %false% then message %p% Usage: /newspapers distribute
 cmd add newspapers exit
 cmd insert newspapers 100 # Subscribe
 cmd add newspapers let %player% = %args%[2]
 cmd add newspapers let %chestx% = %args%[3]
 cmd add newspapers let %chesty% = %args%[4]
 cmd add newspapers let %chestz% = %args%[5]
-cmd add newspapers asop /cmd add newspapers ascon /copyblock empty 414 129 164 %chestx% %chesty% %chestz%
-cmd add newspapers asop /rca %player% /pay KadTheHunter 10
+cmd add newspapers asop /cmd add newspapers ascon /copyblock world 5025 1 5013 %chestx% %chesty% %chestz%
 cmd add newspapers message %p% §fYou have successfully added %player% to the Newspaper Service!
-cmd add newspapers message %player% §fYou have been subscribed to the §oDaily Impyria§r, for $10.
+cmd add newspapers message %player% §fYou have been subscribed to the §oDaily Impyria§r.
 cmd add newspapers exit
 cmd insert newspapers 200 # Distribution
 
