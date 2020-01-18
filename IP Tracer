@@ -1,27 +1,29 @@
-1 if %p% = "VesperSoup48737" then goto 6 
-2 if %p% = "ATskullXD5" then goto 6 
-3 # 3rd Player? DR? 
-4 message %p% You don't have perms to use this!! 
-5 exit 
-6 if varset(%args%[1]) = %false% then message %p% Usage: /geoip (player) 
-7 if varset(%args%[1]) = %false% then exit 
-8 let %pl% = %args%[1] 
-9 let %s% = playerstatus(%pl%) 
-10 let %ip% = %s%["ip"] 
-11 let %done% = dejson(geturl("http://ip-api.com/json/" + %ip%)) 
-12 if varset(%done%) = %false% then message %p% Error: Unable to connect to server. If you get this message more than once go to ip-api.com/docs/unban 
-13 if varset(%done%) = %false% then exit 
-14 message %p% -------- %pl%'s IP Info ------- 
-15 let %city% = %done%["city"] 
-16 let %country% = %done%["country"] 
-17 let %isp% = %done%["isp"] 
-18 let %region% = %done%["regionName"] 
-19 let %zip% = %done%["zip"] 
-20 message %p% Location: %city%, %region%, %country%
-21 sleep 1 
-22 message %p% ISP: %isp% 
-23 message %p% ZIP Code: %zip% 
-24 message %p% ------------------------------ 
-25 exit 
-26 let %pl% = %args%[2] 
-27 let %ip% = %pl%
+cmd create trace ISB Tool #3 | Not for Player usage.
+cmd add trace %allowed% = array(\"KadTheHunter\", \"Beccaaaxoxo\", \"EllisIsMe\")
+cmd add trace if %p% in %allowed% then goto 5
+cmd add trace message %p% You don't have perms to use this!! 
+cmd add trace exit 
+cmd add trace if varset(%args%[1]) = %false% then message %p% Usage: /geoip (player) 
+cmd add trace if varset(%args%[1]) = %false% then exit 
+cmd add trace let %pl% = %args%[1] 
+cmd add trace let %s% = playerstatus(%pl%) 
+cmd add trace let %ip% = %s%["ip"] 
+cmd add trace let %done% = dejson(geturl("http://ip-api.com/json/" + %ip%)) 
+cmd add trace if varset(%done%) = %false% then message %p% Error: Unable to connect to server. If you get this message more than once go to http://ip-api.com/docs/unban 
+cmd add trace if varset(%done%) = %false% then exit
+cmd add trace let %city% = %done%["city"] 
+cmd add trace let %country% = %done%["country"] 
+cmd add trace let %isp% = %done%["isp"] 
+cmd add trace let %region% = %done%["regionName"] 
+cmd add trace let %zip% = %done%["zip"]
+cmd add trace message %p% -------- %pl%'s IP Info ------- 
+cmd add trace sleep 1
+cmd add trace message %p% Location: %city%, %region%, %country%
+cmd add trace sleep 1 
+cmd add trace message %p% ISP: %isp% 
+cmd add trace sleep 2
+cmd add trace message %p% ZIP Code: %zip% 
+cmd add trace message %p% ------------------------------ 
+cmd add trace exit 
+cmd add trace let %pl% = %args%[2] 
+cmd add trace let %ip% = %pl%
