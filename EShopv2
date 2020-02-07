@@ -110,17 +110,9 @@ cmd add eshop if %response4% = 3 then goto 475
 cmd add eshop exit
 cmd insert eshop 425 ascon /enchant %p% unbreaking 1
 cmd add eshop exit
-cmd insert eshop 450 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 50 then message %p% §fYou need at least $50 for this enchant.
-cmd add eshop if %money% < 50 then exit
-cmd add eshop ascon /rca %p% pay ATskullXD5 50
-cmd add eshop ascon /enchant %p% unbreaking 2
+cmd insert eshop 450 ascon /enchant %p% unbreaking 2
 cmd add eshop exit
-cmd insert eshop 475 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 100 then message %p% §fYou need at least $100 for this enchant.
-cmd add eshop if %money% < 100 then exit
-cmd add eshop ascon /rca %p% pay ATskullXD5 100
-cmd add eshop ascon /enchant %p% unbreaking 3
+cmd insert eshop 475 ascon /enchant %p% unbreaking 3
 cmd add eshop exit
 cmd insert eshop 500 %gui5%[\"type\"] = \"form\"]
 cmd add eshop %gui5%[\"title\"] = \"§l§aKnockback§r\"
@@ -140,11 +132,7 @@ cmd add eshop if %response5% = 2 then goto 550
 cmd add eshop exit
 cmd insert eshop 525 ascon /enchant %p% knockback 1
 cmd add eshop exit
-cmd insert eshop 550 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 100 then message %p% §fYou need at least $100 for this enchant.
-cmd add eshop if %money% < 100 then exit
-cmd add eshop ascon /rca %p% pay ATskullXD5 100
-cmd add eshop ascon /enchant %p% knockback 2
+cmd insert eshop 550 ascon /enchant %p% knockback 2
 cmd add eshop exit
 cmd insert eshop 600 %gui6%[\"type\"] = \"form\"
 cmd add eshop %gui6%[\"title\"] = \"§d§lProtection§r\"
@@ -167,17 +155,9 @@ cmd add eshop if %response6% = 3 then goto 675
 cmd add eshop exit
 cmd insert eshop 625 ascon /enchant %p% protection 2
 cmd add eshop exit
-cmd insert eshop 650 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 100 then message %p% §fYou need at least $100 for this enchant.
-cmd add eshop if %money% < 100 then exit
-cmd add eshop ascon /rca %p% pay ATskullXD5 100
-cmd add eshop ascon /enchant %p% protection 3
+cmd insert eshop 650 ascon /enchant %p% protection 3
 cmd add eshop exit
-cmd insert eshop 675 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 200 then message %p% §fYou need at least $200 for this enchant.
-cmd add eshop if %money% < 200 then exit
-cmd add eshop ascon /rca %p% pay ATskullXD5 200
-cmd add eshop ascon /enchant %p% protection 4
+cmd insert eshop 675 ascon /enchant %p% protection 4
 cmd add eshop exit
 cmd insert eshop 700 %gui7%[\"type\"] = \"form\"
 cmd add eshop %gui7%[\"title\"] = \"§4§lSmite§r\"
@@ -198,23 +178,11 @@ cmd add eshop if %response7% = 1 then goto 725
 cmd add eshop if %response7% = 2 then goto 750
 cmd add eshop if %response7% = 3 then goto 775
 cmd add eshop exit
-cmd insert eshop 725 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 100 then message %p% §fYou need at least $100 for this enchant.
-cmd add eshop if %money% < 100 then exit
-cmd add eshop ascon /enchant %p% smite 1
-cmd add eshop ascon /rca %p% pay ATskullXD5 100
+cmd insert eshop 725 ascon /enchant %p% smite 1
 cmd add eshop exit
-cmd insert eshop 750 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 150 then meesage %p% §fYou need at least $150 for this enchant.
-cmd add eshop if %money% < 150 then exit
-cmd add eshop ascon /enchant %p% smite 3
-cmd add eshop ascon /rca %p% pay ATskullXD5 150
+cmd insert eshop 750 ascon /enchant %p% smite 3
 cmd add eshop exit
-cmd insert eshop 775 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 200 then message %p% §fYou neef at least $200 for this enchant.
-cmd add eshop if %money% < 200 then exit
-cmd add eshop ascon /enchant %p% smite 5
-cmd add eshop ascon /rca %p% pay ATskullXD5 200
+cmd insert eshop 775 ascon /enchant %p% smite 5
 cmd add eshop exit
 cmd insert eshop 800 %gui8%[\"type\"] = \"form\"
 cmd add eshop %gui8%[\"title\"] = \"§6§lPunch§r\"
@@ -232,17 +200,9 @@ cmd add eshop if %response8% = 0 then exit
 cmd add eshop if %response8% = 1 then goto 850
 cmd add eshop if %response8% = 2 then goto 875
 cmd add eshop exit
-cmd insert eshop 850 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 100 then message %p% §fYou need at least $100 for this enchant.
-cmd add eshop if %money % < 100 then exit
-cmd add eshop ascon /enchant %p% punch 1
-cmd add eshop ascon /rca %p% pay ATskullXD5 100
+cmd insert eshop 850 ascon /enchant %p% punch 1
 cmd add eshop exit
-cmd insert eshop 875 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 150 then message %p% §fYou need at least $150 for this enchant.
-cmd add eshop if %money % < 150 then exit
-cmd add eshop ascon /enchant %p% punch 2
-cmd add eshop ascon /rca %p% pay ATskullXD5 150
+cmd insert eshop 875 ascon /enchant %p% punch 2
 cmd add eshop exit
 cmd insert eshop 900 %gui9%[\"type\"] = \"form\"
 cmd add eshop %gui9%[\"title\"] = \"§a§lPower§r\"
@@ -263,23 +223,11 @@ cmd add eshop if %response9% = 1 then goto 925
 cmd add eshop if %response9% = 2 then goto 950
 cmd add eshop if %response9% = 3 then goto 975
 cmd add eshop exit
-cmd insert eshop 925 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 100 then message %p% §fYou need at least $100 for this enchant.
-cmd add eshop if %money% < 100 then exit
-cmd add eshop ascon /enchant %p% power 1
-cmd add eshop ascon /rca %p% pay ATskullXD5 100
+cmd insert eshop 925 ascon /enchant %p% power 1
 cmd add eshop exit
-cmd insert eshop 950 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 150 then message %p% §fYou need at least $150 for this enchant.
-cmd add eshop if %money% < 150 then exit
-cmd add eshop ascon /enchant %p% power 3
-cmd add eshop ascon /rca %p% pay ATskullXD5 150
+cmd insert eshop 950 ascon /enchant %p% power 3
 cmd add eshop exit
-cmd insert eshop 975 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 200 then message %p% §fYou need at least $200 for this enchant.
-cmd add eshop if %money% < 200 then exit
-cmd add eshop ascon /enchant %p% power 5
-cmd add eshop ascon /rca %p% pay ATskullXD5 200
+cmd insert eshop 975 ascon /enchant %p% power 5
 cmd add eshop exit
 cmd insert eshop 1000 %gui10%[\"type\"] = \"form\"
 cmd add eshop %gui10%[\"title\"] = \"§c§lFire §6Aspect§r\"
@@ -297,17 +245,9 @@ cmd add eshop if %response10% = 0 then exit
 cmd add eshop if %response10% = 1 then goto 1050
 cmd add eshop if %response10% = 2 then goto 1075
 cmd add eshop exit
-cmd insert eshop 1050 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 100 then message %p% §fYou need at least $100 for this enchant.
-cmd add eshop if %money% < 100 then exit
-cmd add eshop ascon /enchant %p% fire_aspect 1
-cmd add eshop ascon /rca %p% pay ATskullXD5 100
+cmd insert eshop 1050 ascon /enchant %p% fire_aspect 1
 cmd add eshop exit
-cmd insert eshop 1075 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 200 then message %p% §fYou need at least $200 for this enchant.
-cmd add eshop if %money% < 200 then exit
-cmd add eshop ascon /enchant %p% fire_aspect 2
-cmd add eshop ascon /rca %p% pay ATskullXD5 200
+cmd insert eshop 1075 ascon /enchant %p% fire_aspect 2
 cmd add eshop exit
 cmd insert eshop 1100 %gui11%[\"type\"] = \"form\"
 cmd add eshop %gui11%[\"title\"] = \"§e§lEfficiency§r\"
@@ -328,21 +268,9 @@ cmd add eshop if %response11% = 1 then goto 1125
 cmd add eshop if %response11% = 2 then goto 1150
 cmd add eshop if %response11% = 3 then goto 1175
 cmd add eshop exit
-cmd insert eshop 1125 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 100 then message %p% §fYou need at least $100 for this enchant.
-cmd add eshop if %money% < 100 then exit
-cmd add eshop ascon /enchant %p% efficiency 1
-cmd add eshop ascon /rca %p% pay ATskullXD5 100
+cmd insert eshop 1125 ascon /enchant %p% efficiency 1
 cmd add eshop exit
-cmd insert eshop 1150 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 150 then message %p% §fYou need at least $150 for this enchant.
-cmd add eshop if %money% < 150 then exit
-cmd add eshop ascon /enchant %p% efficiency 3
-cmd add eshop ascon /rca %p% pay ATskullXD5 150
+cmd insert eshop 1150 ascon /enchant %p% efficiency 3
 cmd add eshop exit
-cmd insert eshop 1175 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 200 then message %p% §fYou need at least $200 for this enchant.
-cmd add eshop if %money% < 200 then exit
-cmd add eshop ascon /enchant %p% efficiency 5
-cmd add eshop ascon /rca %p% pay ATskullXD5 200
+cmd insert eshop 1175 ascon /enchant %p% efficiency 5
 cmd add eshop exit
