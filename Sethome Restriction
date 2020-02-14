@@ -1,8 +1,0 @@
-cmd create sethome 
-cmd add sethome let %allowed% = array(\"world\") 
-cmd add sethome if %level% in %allowed% then goto 5 
-cmd add sethome message %p% §cYou cannot set a home in this world! 
-cmd add sethome exit 
-cmd add sethome if varset(%args%[1]) then let %cmd% = join(%args%[1+], \" \") 
-cmd add sethome if varset(%cmd%) = %false% then /sethome 
-cmd add sethome if varset(%cmd%) then /sethome %cmd%
