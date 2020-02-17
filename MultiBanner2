@@ -1,0 +1,12 @@
+cmd create multibanner2 Swaps the other banners at 30 second intervals
+cmd add multibanner2 let %les% = \"CW00OOTQUS\"
+cmd add multibanner2 let %thick% = \"FVTY52Q24D\"
+cmd add multibanner2 let %padme% = \"PKBERJ0K7B\"
+cmd add multibanner2 # Divider
+cmd add multibanner2 ascon /banner set %les%
+cmd add multibanner2 sleep 15
+cmd add multibanner2 ascon /banner set %thick%
+cmd add multibanner2 sleep 15
+cmd add multibanner2 ascon /banner set %padme%
+cmd add multibanner2 sleep 15
+cmd add multibanner2 goto 1
