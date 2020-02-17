@@ -1,0 +1,16 @@
+cmd create ac Auto Broadcast | Broadcasts preset messages!
+cmd add ac let %online% = onlineplayers()
+cmd add ac let %discordmsg% = \"§b§oBe sure and join our Discord for the latest in Server News, Community Challenges, Memes, Music, and More! §ehttps://discord.gg/ZJmtscn\"
+cmd add ac let %staffmsg% = \"§b§oLooking to apply for §cStaff§b? Only users who have played here longer than §e1 week§b, and who also have §eDiscord§b can apply!\"
+cmd add ac let %ytmsg% = \"§b§oLooking for §fYou§cTuber§d? If your channel has 5 subscribers or more, and at least 1 video of XOXO High RolePlay with our IP & Port included, you can get the §fYou§cTuber§d rank on Discord!\"
+cmd add ac let %griefmsg% = \"§b§oSee a §eGrief§b? Report it to a Staff member immediately!\"
+cmd add ac # Divider
+cmd add ac message %online% %discordmsg%
+cmd add ac sleep 60
+cmd add ac message %online% %staffmsg%
+cmd add ac sleep 60
+cmd add ac message %online% %ytmsg%
+cmd add ac sleep 60
+cmd add ac message %online% %griefmsg%
+cmd add ac sleep 60
+cmd add ac goto 1
