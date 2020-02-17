@@ -2,9 +2,6 @@ cmd create multibanner Swaps the banners at 30 second intervals
 cmd add multibanner let %archie% = \"CRNFE62E7N\"
 cmd add multibanner let %inquisitor% = \"4792WZRLIG\"
 cmd add multibanner let %citymap% = \"0RN587RXZ5\"
-cmd add multibanner let %les% = \"CW00OOTQUS\"
-cmd add multibanner let %thick% = \"FVTY52Q24D\"
-cmd add multibanner let %padme% = \"PKBERJ0K7B\"
 cmd add multibanner # Divider
 cmd add multibanner ascon /banner set %archie%
 cmd add multibanner sleep 30
@@ -12,10 +9,4 @@ cmd add multibanner ascon /banner set %inquisitor%
 cmd add multibanner sleep 30
 cmd add multibanner ascon /banner set %citymap%
 cmd add multibanner sleep 30
-cmd add multibanner ascon /banner set %les%
-cmd add multibanner sleep 3
-cmd add multibanner ascon /banner set %thick%
-cmd add multibanner sleep 3
-cmd add multibanner ascon /banner set %padme%
-cmd add multibanner sleep 3
 cmd add multibanner goto 1
