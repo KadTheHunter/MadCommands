@@ -1,0 +1,14 @@
+cmd create vote Claim your vote reward
+cmd add vote let %url%[] = \"https://minecraftpocket-servers.com/api/?object=votes&element=claim&key={API-KEY}&username=\"
+cmd add vote let %url%[] = %p%
+cmd add vote let %api1% = join(%url%, \"\")
+cmd add vote let %response% = geturl(%api1%)
+cmd add vote if %response% = 1 then goto 100
+cmd add vote if %response% = 0 then message %p% You didn't vote today!
+cmd add vote if %response% = 2 then message %p% You already claimed your reward!
+cmd add vote exit
+cmd insert vote 100 vote let %url2%[] = \"https://minecraftpocket-servers.com/api/?action=post&object=votes&element=claim&key={API-KEY}&username=\"
+cmd add vote let %url2%[] = %p%
+cmd add vote let %api2% = join(%url2%, \"\")
+cmd add vote let %response% = geturl(%api2%)
+cmd add vote message onlineplayers() %p% voted for us!
