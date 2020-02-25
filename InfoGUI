@@ -1,4 +1,4 @@
-cmd create info Server info
+cmd create info Server info | Usage: /info
 cmd add info %gui%[\"type\"] = \"form\"
 cmd add info %gui%[\"title\"] = \"§a§lInfo\"
 cmd add info %gui%[\"content\"] = \"Click to open | GUI developed by punjana12\"
