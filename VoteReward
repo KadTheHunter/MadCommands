@@ -1,4 +1,4 @@
-cmd create vote Claim your vote reward
+cmd create vote Claim your vote reward | Usage: Vote for us then run /vote
 cmd add vote let %url%[] = \"https://minecraftpocket-servers.com/api/?object=votes&element=claim&key={API-KEY}&username=\"
 cmd add vote let %url%[] = %p%
 cmd add vote let %api1% = join(%url%, \"\")
