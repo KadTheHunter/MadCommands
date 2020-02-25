@@ -5,18 +5,16 @@ cmd add hub exit
 
 
 
-cmd create gmc Changes you or a player into creative mode | /gmc <player>
+cmd create gmc Changes you into creative mode | /gmc
 cmd add gmc let %player% = %p%
-cmd add gmc if varset(%args%[1]) then let %player% = %args%[1]
-cmd add gmc /gamemode c %player%
+cmd add gmc asop /gamemode c %player%
 cmd add gmc exit
 
 
 
-cmd create gms Changes you or a player into survival mode | /gms <player>
+cmd create gms Changes you into survival mode | /gms
 cmd add gms let %player% = %p%
-cmd add gms if varset(%args%[1]) then let %player% = %args%[1]
-cmd add gms /gamemode s %player%
+cmd add gms asop /gamemode s %player%
 cmd add gms exit
 
 
