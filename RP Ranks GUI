@@ -1,4 +1,4 @@
-cmd create rpranks Get a custom RolePlay Rank
+cmd create rpranks Get a custom RolePlay Rank | Usage: /rpranks
 cmd add rpranks %player% = %p% 
 cmd add rpranks if varset(%args%[1]) then %player% = %args%[1] 
 cmd add rpranks %gui%["type"] = "custom_form" 
