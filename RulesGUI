@@ -1,6 +1,6 @@
 cmd create rules Server Rules
 cmd add rules %gui%[\"type\"] = \"form\"
-cmd add rules %gui%[\"title\"] = \"§6Rules\"
+cmd add rules %gui%[\"title\"] = \"§a§lRules\"
 cmd add rules %gui%[\"content\"] = \"Click to open | GUI developed by punjana12\"
 cmd add rules %b0%[\"text\"] = \"§bGeneral\"
 cmd add rules %b1%[\"text\"] = \"§eChat\"
