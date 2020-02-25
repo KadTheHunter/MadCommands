@@ -12,7 +12,7 @@ cmd add rules %gui%[\"buttons\"] = %bs%
 cmd add rules %res% = dialog(%p%, %gui%)
 cmd add rules if %res% = 0 then goto 16
 cmd add rules if %res% = 1 then goto 23
-cmd add rules if %res% = 1 then goto 28
+cmd add rules if %res% = 2 then goto 29
 cmd add rules exit
 cmd add rules message %p% §b§lGeneral§r
 cmd add rules message %p% 1. Do not Grief.
