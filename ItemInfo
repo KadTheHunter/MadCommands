@@ -1,4 +1,4 @@
-cmd create ii Item Information
+cmd create ii Item Information | Usage: Hold any Item and run /ii
 cmd add ii let %hand% = playerhand(%p%)
 cmd add ii let %id% = %hand%[\"id\"]
 cmd add ii let %meta% = %hand%[\"variant\"]
