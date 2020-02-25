@@ -1,8 +1,0 @@
-cmd create tempban Temporarly Ban a Player | Usage: /tempban <player> <seconds>
-cmd add tempban let %ban% = %args%[1]
-cmd add tempban let %timer% = %args%[2]
-cmd add tempban /ban %ban% You have been banned for %timer% seconds!
-cmd add tempban /cmd edit tempban 5 sleep %timer%
-cmd add tempban # Timer
-cmd add tempban ascon /pardon %ban%
-cmd add tempban exit
