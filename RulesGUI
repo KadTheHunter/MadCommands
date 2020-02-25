@@ -1,4 +1,4 @@
-cmd create rules Server Rules
+cmd create rules Server Rules | Usage: /rules
 cmd add rules %gui%[\"type\"] = \"form\"
 cmd add rules %gui%[\"title\"] = \"§a§lRules\"
 cmd add rules %gui%[\"content\"] = \"Click to open | GUI developed by punjana12\"
