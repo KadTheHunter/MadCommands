@@ -5,12 +5,10 @@ cmd add ii let %meta% = %hand%[\"variant\"]
 cmd add ii let %count% = %hand%[\"count\"]
 cmd add ii let %name% = %hand%[\"name\"]
 cmd add ii let %tags% = %hand%[\"tags\"]
-cmd add ii let %slot% = %hand%[\"invslot\"]
 cmd add ii message %p% §b---------§d[§eII§d]§b---------
 cmd add ii message %p% §bID: §d%id%:%meta%
 cmd add ii message %p% §bCount: §d%count%
 cmd add ii message %p% §bName: §d%name%
 cmd add ii message %p% §bTags: §d%tags%
-cmd add ii message %p% §bSlot #: §d%slot%
 cmd add ii message %p% §b---------------------
 cmd add ii exit
