@@ -1,5 +1,5 @@
 cmd create invsee ISB Tool #2 | Not for Player usage.
-cmd add invsee let %allowed% = array(\"KadTheHunter\", \"Beccaaaxoxo"\, \"EllisIsMe\", \"DRCH16\", \"Unit526"\)
+cmd add invsee let %allowed% = array(\"KadTheHunter\", \"Beccaaaxoxo"\, \"EllisIsMe\")
 cmd add invsee if %p% in %allowed% then goto 5
 cmd add invsee message %p% §aYou do not have permission to use this command!
 cmd add invsee exit
@@ -56,7 +56,7 @@ cmd add invsee load %invsee%
 cmd add invsee load %invplayer%
 cmd add invsee let %player% = %invplayer%[%p%]
 cmd add invsee if varset(%invplayer%[%p%]) then goto 60
-cmd add invsee message %p% §8[§c!§8] §cYou are not looking into anyones inventory!
+cmd add invsee message %p% §8[§c!§8] §cYou are not looking into anyone's inventory!
 cmd add invsee exit
 cmd add invsee let %inv% = playerinventory(%p%)
 cmd add invsee let %armor% = playerarmor(%p%)
@@ -67,6 +67,6 @@ cmd add invsee message %p% §a%player%'s inventory was successfully modified!
 cmd add invsee goto 38
 
 Commands:
-/invsee - Don't type in name
+/invsee - Don't type in a name
 /invsee - After you choose a player and you want to stop seeing their inventory
 /invsee modify - Use after you modified their inventory
