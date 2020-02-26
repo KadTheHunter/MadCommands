@@ -9,10 +9,8 @@ cmd add rpranks %item1%[\"text\"] = \"Enter your RolePlay Rank\"
 cmd add rpranks %content%[] = %item1% 
 cmd add rpranks %gui%[\"content\"] = %content% 
 cmd add rpranks %response% = dialog(%player%, %gui%) 
-cmd add rpranks if varset(%response%) = %false% then goto 17
 cmd add rpranks if varset(%response%) then message %p% Your rank has been set! 
 cmd add rpranks if varset(%response%) then goto 14 
 cmd add rpranks exit 
 cmd add rpranks let %rank% = join(%response%, \" \")
 cmd add rpranks asop /setprefix %rank%
-cmd add rpranks exit

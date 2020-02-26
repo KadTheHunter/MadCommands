@@ -205,7 +205,7 @@ cmd add eshop ascon /enchant %p% smite 1
 cmd add eshop ascon /rca %p% pay ATskullXD5 100
 cmd add eshop exit
 cmd insert eshop 750 %money% = playerbalance(%p%)
-cmd add eshop if %money% < 150 then message %p% §fYou need at least $150 for this enchant.
+cmd add eshop if %money% < 150 then meesage %p% §fYou need at least $150 for this enchant.
 cmd add eshop if %money% < 150 then exit
 cmd add eshop ascon /enchant %p% smite 3
 cmd add eshop ascon /rca %p% pay ATskullXD5 150
