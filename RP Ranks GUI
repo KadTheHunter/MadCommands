@@ -1,17 +1,16 @@
 cmd create rpranks Get a custom RolePlay Rank | Usage: /rpranks
 cmd add rpranks %player% = %p% 
 cmd add rpranks if varset(%args%[1]) then %player% = %args%[1] 
-cmd add rpranks %gui%["type"] = "custom_form" 
-cmd add rpranks %gui%["title"] = "Enter the RolePlay Rank you want." 
-cmd add rpranks %item1%["type"] = "input" 
-cmd add rpranks %item1%["placeholder"] = "Whatever you wish to RolePlay as!" 
-cmd add rpranks %item1%["text"] = "Enter your RolePlay Rank" 
+cmd add rpranks %gui%[\"type\"] = \"custom_form\" 
+cmd add rpranks %gui%[\"title\"] = \"Enter the RolePlay Rank you want.\" 
+cmd add rpranks %item1%[\"type\"] = \"input\" 
+cmd add rpranks %item1%[\"placeholder\"] = \"Whatever you wish to RolePlay as!\" 
+cmd add rpranks %item1%[\"text\"] = \"Enter your RolePlay Rank\" 
 cmd add rpranks %content%[] = %item1% 
-cmd add rpranks %gui%["content"] = %content% 
+cmd add rpranks %gui%[\"content\"] = %content% 
 cmd add rpranks %response% = dialog(%player%, %gui%) 
 cmd add rpranks if varset(%response%) then message %p% Your rank has been set! 
 cmd add rpranks if varset(%response%) then goto 14 
 cmd add rpranks exit 
 cmd add rpranks let %rank% = join(%response%, \" \")
 cmd add rpranks asop /setprefix %rank%
-
