@@ -1,4 +1,4 @@
-cmd create multibanner Swaps the banners at 30 second intervals
+cmd create multibanner Swaps the banners at 30-second intervals
 cmd add multibanner let %archie% = \"CRNFE62E7N\"
 cmd add multibanner let %inquisitor% = \"4792WZRLIG\"
 cmd add multibanner let %citymap% = \"0RN587RXZ5\"
