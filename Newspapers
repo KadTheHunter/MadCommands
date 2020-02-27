@@ -34,7 +34,7 @@ cmd add newspapers if %aog% = \"get\" goto 200
 cmd add newspapers exit
 cmd insert newspapers 100 # set
 cmd add newspapers let %status% = playerstatus(%p%)
-cmd add newspapers if %status%["op"] = %true% then goto 105
-cmd add newspapers message %p% §Nice try bozo. Only Ministers can update the Newspaper itself!
+cmd add newspapers if %status%[\"op\"] = %true% then goto 105
+cmd add newspapers message %p% §cNice try bozo. Only Ministers can update the Newspaper itself!
 cmd add newspapers exit
 cmd add newspapers 
