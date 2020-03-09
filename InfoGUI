@@ -34,5 +34,6 @@ cmd add info message %p% §d§lUpdates§r
 cmd add info message %p% Last Update: The Brunsworth Update (March 1st, 2020)
 cmd add info message %p% Current Update: The Brunsworth Update (March 1st, 2020)
 cmd add info message %p% Next Update: The Zombos and Wolfies Update (August 1st, 2020)
-cmd add info message %p% Current Patch Update: XOHR 4.8.0
+cmd add info message %p% Latest Addition: Updated Discord Link & Banned RP Ranks.
+cmd add info message %p% Current Patch Update: XOHR 4.8.2
 cmd add info exit
