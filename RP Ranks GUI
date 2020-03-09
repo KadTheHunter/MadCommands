@@ -15,3 +15,9 @@ cmd add rpranks if varset(%response%) then goto 14
 cmd add rpranks exit 
 cmd add rpranks let %rank% = join(%response%, \" \")
 cmd add rpranks asop /setprefix %rank%
+
+
+# Implement the lines below next
+cmd add rpranks let %banned% array(\"Owner\", \"owner\", \"Leader\", \"leader\", \"Administrator\", \"administrator\", \"Admin\", \"admin\", \"Moderator\", \"moderator\", \"Mod\", \"mod\",\"Staff\", \"staff\", \"Pimp\", \"Druggie\", \"Whore\", \"Prostitute\", \"Crackhead\")
+cmd add rpranks if varset(%response%) in %banned% then message %p% You can not have that as a Rank!
+cmd add rpranks if varset(%response%) in %banned% then exit
