@@ -11,7 +11,7 @@ cmd add rpranks %gui%[\"content\"] = %content%
 cmd add rpranks %response% = dialog(%player%, %gui%) 
 cmd add rpranks if varset(%response%) = %false% then exit
 cmd add rpranks if varset(%response%) then message %p% Your rank has been set! 
-cmd add rpranks if varset(%response%) then goto 14 
+cmd add rpranks if varset(%response%) then goto 15
 cmd add rpranks exit 
 cmd add rpranks let %rank% = join(%response%, \" \")
 cmd add rpranks asop /setprefix %rank%
