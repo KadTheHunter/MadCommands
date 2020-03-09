@@ -10,6 +10,9 @@ cmd add rpranks %content%[] = %item1%
 cmd add rpranks %gui%[\"content\"] = %content% 
 cmd add rpranks %response% = dialog(%player%, %gui%) 
 cmd add rpranks if varset(%response%) = %false% then exit
+cmd add rpranks let %banned% array(\"Owner\", \"owner\", \"Leader\", \"leader\", \"Administrator\", \"administrator\", \"Admin\", \"admin\", \"Moderator\", \"moderator\", \"Mod\", \"mod\",\"Staff\", \"staff\", \"Pimp\", \"Druggie\", \"Whore\", \"Prostitute\", \"Crackhead\")
+cmd add rpranks if varset(%response%) in %banned% then message %p% You can not have that as a Rank!
+cmd add rpranks if varset(%response%) in %banned% then exit
 cmd add rpranks if varset(%response%) then message %p% Your rank has been set! 
 cmd add rpranks if varset(%response%) then goto 15
 cmd add rpranks exit 
@@ -17,7 +20,7 @@ cmd add rpranks let %rank% = join(%response%, \" \")
 cmd add rpranks asop /setprefix %rank%
 
 
-# Implement the lines below next
+# Implement or Undo the lines below next
 cmd add rpranks let %banned% array(\"Owner\", \"owner\", \"Leader\", \"leader\", \"Administrator\", \"administrator\", \"Admin\", \"admin\", \"Moderator\", \"moderator\", \"Mod\", \"mod\",\"Staff\", \"staff\", \"Pimp\", \"Druggie\", \"Whore\", \"Prostitute\", \"Crackhead\")
 cmd add rpranks if varset(%response%) in %banned% then message %p% You can not have that as a Rank!
 cmd add rpranks if varset(%response%) in %banned% then exit
