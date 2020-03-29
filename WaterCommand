@@ -1,0 +1,3 @@
+cmd create water Gives the Player usable water.
+cmd add water ascon /give %p% water 1
+cmd add water message %p% §lOne (1) water was added to you're inventory. It can be used unlimited times, on any of your builds. Please know that if you grief with it, you WILL be banned.
