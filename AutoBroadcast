@@ -1,5 +1,5 @@
 cmd create ac Auto Broadcast | Broadcasts preset messages!
-cmd add ac let %discordmsg% = \"§b§oBe sure and join our Discord for the latest in Server News, Community Challenges, Memes, Music, and More! §ehttps://discord.gg/ZJmtscn\"
+cmd add ac let %discordmsg% = \"§b§oBe sure and join our Discord for the latest in Server News, Community Challenges, Memes, Music, and More! §ehttps://discord.gg/ur33S5Q\"
 cmd add ac let %nickmsg% = \"§b§oDid you know: You can change or set a §eNickname§b with the §e/nick§b Commands!\"
 cmd add ac let %rankmsg% = \"§b§oWant to set a §dRolePlay Rank§b? Use §d/rpranks§b!\"
 cmd add ac let %staffmsg% = \"§b§oLooking to apply for §cStaff§b? Only users who have played here longer than §e1 month§b, and who also have §eDiscord§b can apply!\"

@@ -7,28 +7,50 @@ cmd add hub exit
 
 cmd create gmc Changes you into creative mode | /gmc
 cmd add gmc let %player% = %p%
-cmd add gmc asop /gamemode c %player%
+cmd add gmc if %gm% != 1 then goto 5
+cmd add gmc if %gm% = 1 then goto 7
+cmd add gmc exit
+cmd add gmc asop /gamemode 1 %player%
+cmd add gmc exit
+cmd add gmc asop /gamemode 1 %player%
 cmd add gmc exit
 
 
 
 cmd create gms Changes you into survival mode | /gms
 cmd add gms let %player% = %p%
-cmd add gms asop /gamemode s %player%
+cmd add gms if %gm% != 0 then goto 5
+cmd add gms if %gm% = 0 then goto 7
+cmd add gms exit
+cmd add gms asop /gamemode 0 %player%
+cmd add gms exit
+cmd add gms asop /gamemode 1 %player%
 cmd add gms exit
 
 
 
 cmd create gmspc Changes you or a player into spectator mode | /gmspc <player>
 cmd add gmspc let %player% = %p%
+cmd add gmspc if %gm% != 3 then goto 5
+cmd add gmspc if %gm% = 3 then goto 8
+cmd add gmspc exit
 cmd add gmspc if varset(%args%[1]) then let %player% = %args%[1]
 cmd add gmspc /gamemode 3 %player%
+cmd add gmspc exit
+cmd add gmspc if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gmspc /gamemode 1 %player%
 cmd add gmspc exit
 
 
 
 cmd create gma Changes you or a player into adventure mode | /gma <player>
 cmd add gma let %player% = %p%
+cmd add gma if %gm% != 2 then goto 5
+cmd add gma if %gm% = 2 then goto 8
+cmd add gma exit
 cmd add gma if varset(%args%[1]) then let %player% = %args%[1]
 cmd add gma /gamemode 2 %player%
+cmd add gma exit
+cmd add gma if varset(%args%[1]) then let %player% = %args%[1]
+cmd add gma /gamemode 1 %player%
 cmd add gma exit
