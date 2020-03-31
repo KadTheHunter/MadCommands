@@ -3,7 +3,7 @@ cmd add freebuild move %p% world -9999.5586 67 -9999.5498
 cmd add freebuild exit
 
 cmd create plotswarp Warps you to Plots
-cmd add plotswarp move %p% Plots 0 65 0
+cmd add plotswarp move %p% Plots 14.4853 66.5 16.5099
 cmd add plotswarp exit
 
 cmd create brunsworth Warps you to Brunsworth
@@ -19,5 +19,5 @@ cmd add warparches move %p% world 256.4991 64.5 234.4797
 cmd add warparches exit
 
 cmd create wolftown Warps you to the Wolf Town
-cmd add wolftown move %p% world 373 64 1340
+cmd add wolftown move %p% world 422.5168 64 1338.4995
 cmd add wolftown exit
