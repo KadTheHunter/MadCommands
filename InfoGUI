@@ -1,7 +1,7 @@
 cmd create info Server info | Usage: /info
 cmd add info %gui%[\"type\"] = \"form\"
 cmd add info %gui%[\"title\"] = \"§a§lInfo\"
-cmd add info %gui%[\"content\"] = \"Click to open | GUI developed by punjana12\"
+cmd add info %gui%[\"content\"] = \"Click to open\"
 cmd add info %b0%[\"text\"] = \"§bServer/Social Media\"
 cmd add info %b1%[\"text\"] = \"§eRanks & Other Features\"
 cmd add info %b2%[\"text\"] = \"§dUpdates\"
@@ -15,7 +15,7 @@ cmd add info if %res% = 1 then goto 25
 cmd add info if %res% = 2 then goto 32
 cmd add info exit
 cmd add info message %p% §b§lServer/Social Media§r
-cmd add info message %p% The server is hosted by LEET Servers for Minecraft PE, and run by Becca, Kad & Ellis.
+cmd add info message %p% The server is hosted by LEET Servers for Minecraft PE, and run by Becca, & Kad.
 cmd add info message %p% We recommend you use ESBE_2G Shader for the best experience on XOXO High RolePlay.
 cmd add info message %p% ESBE_2G can be found on MCPEDL, and a link is provided on our Discord.
 cmd add info message %p% The Discord Invite is https://discord.gg/ur33S5Q
@@ -25,15 +25,15 @@ cmd add info message %p% You can contact us through any of the above sites, or a
 cmd add info exit
 cmd add info message %p% §e§lRanks & Other Features§r
 cmd add info message %p% To set a RolePlay Rank use /rpranks, and enter what you wish to RolePlay as!
-cmd add info message %p% In the future, we will have a Rank Board with preset Ranks for you to choose from as well as /rpranks.
+cmd add info message %p% You Can use colours, but please do not try and set a rank such as "Admin", it never ends well ;)
 cmd add info message %p% All Players have access to commands such as /gmc, /gms, /nv, /nick, and /rpranks.
 cmd add info message %p% For us to get new features such as new Commands and Plugins, please consider donating to us.
 cmd add info message %p% Donating is currently only possible via the iOS App called "LEET Co-Payments".
 cmd add info exit
 cmd add info message %p% §d§lUpdates§r
 cmd add info message %p% Last Update: The Brunsworth Update (March 1st, 2020)
-cmd add info message %p% Current Update: The Brunsworth Update (March 1st, 2020)
-cmd add info message %p% Next Update: The Zombos and Wolfies Update (August 1st, 2020)
-cmd add info message %p% Latest Addition: Updated Discord Link & Banned RP Ranks.
-cmd add info message %p% Current Patch Update: XOHR 5.0.0
+cmd add info message %p% Current Update: The Wolf Update (April 1st, 2020)
+cmd add info message %p% Next Update: The Apocalypse Update (August 1st, 2020)
+cmd add info message %p% Latest Addition: Fixed pretty much every command, and released Wolf Town.
+cmd add info message %p% Current Patch Update: XOHR 6.0.0
 cmd add info exit
