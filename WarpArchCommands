@@ -1,0 +1,23 @@
+cmd create freebuild Warps you to FreeBuild
+cmd add freebuild move %p% world -9999.5586 67 -9999.5498
+cmd add freebuild exit
+
+cmd create plotswarp Warps you to Plots
+cmd add plotswarp move %p% Plots 0 65 0
+cmd add plotswarp exit
+
+cmd create brunsworth Warps you to Brunsworth
+cmd add brunsworth move %p% world 256.5334 64.5 -52.4641
+cmd add brunsworth exit
+
+cmd create roleplaycity Warps you to the RolePlay City
+cmd add roleplaycity move %p% world 8091.5986 65 9345.4404
+cmd add roleplaycity exit
+
+cmd create warparches Warps you to the Warp Arches
+cmd add warparches move %p% world 256.4991 64.5 234.4797
+cmd add warparches exit
+
+cmd create wolftown Warps you to the Wolf Town
+cmd add wolftown move %p% world 373 64 1340
+cmd add wolftown exit
