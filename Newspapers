@@ -38,3 +38,9 @@ cmd add newspapers if %status%[\"op\"] = %true% then goto 105
 cmd add newspapers message %p% §cNice try bozo. Only Ministers can update the Newspaper itself!
 cmd add newspapers exit
 cmd add newspapers 
+
+
+NOTE: This project is suspended until further notice, as:
+1) The usefulness in the current layout and capabilities of the server is negligible
+and 
+2) The command was never fully finished because it is impossible to make it versatile enough to work beyond 1 specific setup.
