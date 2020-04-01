@@ -1,4 +1,6 @@
 cmd create ac Auto Broadcast Broadcasts preset messages!
+cmd add ac let %allowed% = array(\"KadTheHunter\", \"RCON\", \"CONSOLE\", \"Beccaaaxoxo\")
+cmd add ac if %p% notin %allowed% then exit
 cmd add ac let %discordmsg% = \"§b§oBe sure and join our Discord! §ehttps://discord.gg/ur33S5Q\"
 cmd add ac let %nickmsg% = \"§b§oYou can change or set a §eNickname§b with the §e/nick§b Commands!\"
 cmd add ac let %rankmsg% = \"§b§oWant to set a §dRolePlay Rank§b? Use §d/rpranks§b!\"
