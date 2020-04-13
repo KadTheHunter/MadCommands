@@ -1,0 +1,119 @@
+cmd create library Warps to the library
+cmd add library move %p% world 8101.9834 68 9335.9932
+
+cmd create mcdonalds Warps to the McDonald's
+cmd add mcdonalds move %p% world 8072.5088 65 9333.5166
+
+cmd create barbers Warps to the Barber Shop
+cmd add barbers move %p% world 8071.0186 65 9298.9717
+
+cmd create mall Warps to the Mall
+cmd add mall move %p% world 8128.5029 65.0625 9425.4375
+
+cmd create lawfirm Warps to the Law Firm
+cmd add lawfirm move %p% world 8156.519 67 9338.3086
+
+cmd create cafe Warps to the Cafe
+cmd add cafe move %p% world 8196.5498 66 9339.5586
+
+cmd create highschool Warps to the Highschool
+cmd add highschool move %p% world 8219.9492 65 9328.0078
+
+cmd create dorms Warps to the Highschool Dorms
+cmd add dorms move %p% world 8219.9854 65 9389.9512
+
+cmd create park Warps to the City Park
+cmd add park move %p% world 8257.9971 65 9446.4639
+
+cmd create museum Warps to the History Museum
+cmd add museum move %p% world 8227.5332 67 9493.6426
+
+cmd create skyscraper Warps to the Skyscraper
+cmd add skyscraper move %p% world 8282.4639 66.5 9497.4688
+
+cmd create cathedral Warps to the Cathedral
+cmd add cathedral move %p% world 8359.5244 65 9462.543
+
+cmd create graveyard Warps to the Cathedrals Graveyard
+cmd add graveyard move %p% world 8339.4668 65 9418.5762
+
+cmd create townhall Warps to the Town Hall
+cmd add townhall move %p% world 8366.5684 66 9505.0059
+
+cmd create courthouse Warps to the Courthouse
+cmd add courthouse move %p% world 8400.9912 65 9451.0166
+
+cmd create bookstore Warps to the Bookstore
+cmd add bookstore move %p% world 8405.9766 65 9417.0059
+
+cmd create airport Warps to the Airport
+cmd add airport move %p% world 8397.499 65 9319.4873
+
+cmd create firestation Warps to the Fire Station
+cmd add firestation move %p% world 8314.5166 65 9266.4629
+
+cmd create kfc Warps to the Kad's Fried Chicken
+cmd add kfc move %p% world 8323.9609 65 9308.9854
+
+cmd create cinema Warps to the Cinema
+cmd add cinema move %p% world 8270.9805 64.5 9282.0537
+
+cmd create downtownapartments Warps to the Downtown Apartments
+cmd add downtownapartments move %p% world 8182.9668 65 9297.9766
+
+cmd create newspaperoffices Warps to the Daily Impyria Newspaper Offices
+cmd add newspaperoffices move %p% world 8169.9766 65 9296.9727
+
+cmd create hotel Warps to the Hotel
+cmd add hotel move %p% world 8138.0137 65 9298.9746
+
+cmd create pool Warps to the Public Pool
+cmd add pool move %p% world 8190.0234 65 9272.0215
+
+cmd create hospital Warps to the Hospital
+cmd add hospital move %p% world 8147.0146 65 9271.0049
+
+cmd create policestation Warps to the Police Station
+cmd add policestation move %p% world 8107.4785 65 9271.4561
+
+cmd create pizzeria Warps to Lightning Luigi's Pizzeria
+cmd add pizzeria move %p% world 8060.0112 65 9275.0391
+
+cmd create garfieldslasagna Warps to Garfield's Lasagna
+cmd add garfieldslasagna move %p% world 7986.4551 65 9336.4082
+
+cmd create aldi Warps to the Aldi
+cmd add aldi move %p% world 7995.5215 65 9409.5059
+
+cmd create subway Warps to the Subway Shop
+cmd add subway move %p% world 7990.4019 65 9463.5283
+
+cmd create boutique Warps to Paige's boutique
+cmd add boutique move %p% world 7992.4556 65.0625 9483.4912
+
+cmd create internetservice Warps to the Phone & Internet Store
+cmd add internetservice move %p% world 7990.4854 65 9503.4668
+
+cmd create petstore Warps to the Pet Store
+cmd add petstore move %p% world 7996.5 65.0625 9538.5332
+
+cmd create starbuck Warps to the Starbuck
+cmd add starbuck move %p% world 7987.5254 65.0625 9573.5674
+
+cmd create freshiicafe Warps to Freshii Cafe 
+cmd add freshiicafe move %p% world 8428.9668 65 9259.9961
+
+cmd create realestate Warps to the Real Estate building
+cmd add realestate move %p% world 8430.499 65 9567.4229
+
+cmd create factory Warps to the Factories
+cmd add factory move %p% world 8524.502 65 9490.4883
+
+cmd create constructionsite Warps to the Construction Site
+cmd add constructionsite move %p% world 8404.9902 65 9603.9902
+
+cmd create apartmentcomplex Warps to the Apartment Complex
+cmd add apartmentcomplex Message %p% This warp is coming soon.....
+
+cmd create beach Warps to the Beach
+cmd add beach move %p% world 8305.4668 64 9168.5166
