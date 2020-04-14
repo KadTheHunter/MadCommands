@@ -1,11 +1,12 @@
 cmd create ac Auto Broadcast Broadcasts preset messages!
+cmd add ac let %allowed% = array(\"KadTheHunter\", \"RCON\", \"CONSOLE\", \"Beccaaaxoxo\")
+cmd add ac if %p% notin %allowed% then exit
 cmd add ac let %discordmsg% = \"§b§oBe sure and join our Discord! §ehttps://discord.gg/ur33S5Q\"
 cmd add ac let %nickmsg% = \"§b§oYou can change or set a §eNickname§b with the §e/nick§b Commands!\"
 cmd add ac let %rankmsg% = \"§b§oWant to set a §dRolePlay Rank§b? Use §d/rpranks§b!\"
 cmd add ac let %staffmsg% = \"§b§oLooking to apply for §cStaff§b? Only users who have played here longer than §e1 month§b, and who also have §eDiscord§b can apply!\"
 cmd add ac let %ytmsg% = \"§bIf your channel has 15 or more subscribers, and 1 video of XOXO High RolePlay with IP & Port included, you can get the §fYou§cTuber§b Rank!\"
 cmd add ac let %griefmsg% = \"§b§oSee a §eGrief§b? Report it to a Staff member immediately!\"
-cmd add ac let %watermsg% = \"§bLooking for useable §1Water§b? Use §e/water§b!\"
 cmd add ac # Divider
 cmd add ac message onlineplayers() %discordmsg%
 cmd add ac sleep 90
@@ -18,7 +19,5 @@ cmd add ac sleep 90
 cmd add ac message onlineplayers() %ytmsg%
 cmd add ac sleep 90
 cmd add ac message onlineplayers() %griefmsg%
-cmd add ac sleep 90
-cmd add ac message onlineplayers() %watermsg%
 cmd add ac sleep 90
 cmd add ac goto 1

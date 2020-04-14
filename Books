@@ -1,0 +1,10 @@
+cmd create mandodictionary
+cmd add mandodictionary let %inv% = playerinventory(%p%)
+cmd add mandodictionary load %mandoadictionary%
+cmd add mandodictionary let %newinv% = %inv% + %mandoadictionary%
+cmd add mandodictionary carry %p% %newinv%
+
+cmd create publisher
+cmd add publisher load %mandoadictionary%
+cmd add publisher let %mandoadictionary% = playerinventory(%p%)
+cmd add publisher save %mandoadictionary%

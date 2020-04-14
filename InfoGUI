@@ -25,7 +25,7 @@ cmd add info message %p% You can contact us through any of the above sites, or a
 cmd add info exit
 cmd add info message %p% §e§lRanks & Other Features§r
 cmd add info message %p% To set a RolePlay Rank use /rpranks, and enter what you wish to RolePlay as!
-cmd add info message %p% You Can use colours, but please do not try and set a rank such as "Admin", it never ends well ;)
+cmd add info message %p% You can use colours, but please do not try and set a rank such as "Admin", it never ends well ;)
 cmd add info message %p% All Players have access to commands such as /gmc, /gms, /nv, /nick, and /rpranks.
 cmd add info message %p% For us to get new features such as new Commands and Plugins, please consider donating to us.
 cmd add info message %p% Donating is currently only possible via the iOS App called "LEET Co-Payments".
@@ -34,6 +34,6 @@ cmd add info message %p% §d§lUpdates§r
 cmd add info message %p% Last Update: The Brunsworth Update (March 1st, 2020)
 cmd add info message %p% Current Update: The Wolf Update (April 1st, 2020)
 cmd add info message %p% Next Update: The Apocalypse Update (August 1st, 2020)
-cmd add info message %p% Latest Addition: Fixed pretty much every command, and released Wolf Town.
-cmd add info message %p% Current Patch Update: XOHR 6.0.0
+cmd add info message %p% Latest Addition: Added Commands such as /highschool, /library, /firestation, etc.
+cmd add info message %p% Current Patch Update: XOHR 6.3.0
 cmd add info exit

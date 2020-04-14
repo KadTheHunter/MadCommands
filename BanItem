@@ -1,0 +1,7 @@
+cmd create banitem Prevents usage of certain items.
+cmd add banitem let %banned% = array(\"11\", \"325:10\", \"46\")
+cmd add banitem if %args%[7] in %banned% then goto 4
+cmd add banitem exit
+cmd add banitem cancel
+cmd add banitem message %p%  §cyou can’t place this item.
+cmd trigger touch banitem 
