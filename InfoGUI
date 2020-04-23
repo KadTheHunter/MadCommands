@@ -34,6 +34,6 @@ cmd add info message %p% §d§lUpdates§r
 cmd add info message %p% Last Update: The Brunsworth Update (March 1st, 2020)
 cmd add info message %p% Current Update: The Wolf Update (April 1st, 2020)
 cmd add info message %p% Next Update: The Apocalypse Update (August 1st, 2020)
-cmd add info message %p% Latest Addition: Added Commands such as /highschool, /library, /firestation, etc.
-cmd add info message %p% Current Patch Update: XOHR 6.3.0
+cmd add info message %p% Latest Addition: §lProperly§r AutoBroadcast
+cmd add info message %p% Current Patch Update: XOHR 6.3.1
 cmd add info exit
