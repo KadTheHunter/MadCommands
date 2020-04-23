@@ -34,5 +34,5 @@ cmd add info message %p% §d§lEvents§r
 cmd add info message %p% We do RolePlay Events nearly every day, Building Challenges every week, and Giveaways randomly.
 cmd add info message %p% For RolePlay Events and Building Challenges check the boards at Spawn, or the #events-and-challenges channel on Discord.
 cmd add info message %p% For Giveaways, Join our Discord (https://discord.gg/wJQEYhd) and stay tuned to the #giveaways channel for a chance to enter a Giveaway.
-cmd add info message %p% The winners of Build Challenges and Giveaways will recieve a VIP(?) Rank as their reward. 
+cmd add info message %p% The winners of Build Challenges and Giveaways will recieve a VIP Rank as their reward. 
 cmd add info exit
