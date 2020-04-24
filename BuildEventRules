@@ -1,0 +1,9 @@
+cmd create buildevent Rules and Info about the latest Building Challenge/Event
+cmd add buildevent message %p% §5§lBuild Events/Challenges Info & Rules§r
+cmd add buildevent message %p% Current Challenge Date: §b§oApril 26th - May 2nd
+cmd add buildevent message %p% Current Challenge Topic: §b§oMedieval
+cmd add buildevent message %p% Teaming: §b§oNot Allowed
+cmd add buildevent message %p% Submission: §b§oMessage an Online Staff or Leader on Discord or Minecraft, and they will set a home at your Build.
+cmd add buildevent message %p% Rating: §b§oAt the end of the week, Staff will rate a Build out of 10, and the Winning Builder will recieve VIP rank.
+cmd add buildevent message %p% Rewards: §b§oThe Winner will recieve VIP Rank on Minecraft, which has access to /morph, /tp, /give, and /enchant. They will also recieve VIP Rank on Discord if they are on our Discord.
+cmd add buildevent exit
