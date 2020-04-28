@@ -28,7 +28,7 @@ cmd add info message %p% To set a RolePlay Rank use /rpranks, and enter what you
 cmd add info message %p% You can use colours, but please do not try and set a rank such as "Admin", it never ends well ;)
 cmd add info message %p% All Players have access to commands such as /gmc, /gms, /nv, /nick, /size, and /rpranks.
 cmd add info message %p% For us to get new features such as new Commands and Plugins, please consider donating to us.
-cmd add info message %p% Donating is currently only possible via the iOS App called "LEET Co-Payments".
+cmd add info message %p% Donating is possible via the iOS App called "LEET Co-Payments" and the Android app called "LEET Donations".
 cmd add info exit
 cmd add info message %p% §d§lEvents§r
 cmd add info message %p% We do RolePlay Events nearly every day, Building Challenges every week, and Giveaways randomly.
