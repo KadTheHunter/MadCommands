@@ -8,6 +8,7 @@ addgroup TopVoter
 addgroup Player
 rmgroup Guest
 rmgroup Owner
+defgroup Player
 setformat Leader §b[§r{prefix}§r§b] §e•§6Leader§e• §a{display_name} §b>> §r§f{msg}
 setnametag Leader global §b•§r §6§lLeader§r §e{display_name}§r §b•
 setformat Admin §b[§r{prefix}§r§b] §e•§cAdmin§e• §a{display_name} §b>> §r§f{msg}
