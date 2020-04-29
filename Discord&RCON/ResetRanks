@@ -1,0 +1,77 @@
+addgroup Leader
+rmgroup Admin
+addgroup Admin
+addgroup Mod
+addgroup Builder
+addgroup VIP
+addgroup TopVoter
+addgroup Player
+rmgroup Guest
+rmgroup Owner
+setformat Leader §b[§r{prefix}§r§b] §e•§6Leader§e• §a{display_name} §b>> §r§f{msg}
+setnametag Leader global §b•§r §6§lLeader§r §e{display_name}§r §b•
+setformat Admin §b[§r{prefix}§r§b] §e•§cAdmin§e• §a{display_name} §b>> §r§f{msg}
+setnametag Admin global §b•§r §c§lAdmin§r §e{display_name}§r §b•
+setformat Mod §b[§r{prefix}§r§b] §e•§aMod§e• §a{display_name} §b>> §r§f{msg}
+setnametag Mod global §b•§r §a§lMod§r §e{display_name}§r §b•
+setformat Builder §b[§r{prefix}§r§b] §e•§5Builder§e• §a{display_name} §b>> §r§f{msg}
+setnametag Builder global §b•§r §5§lBuilder§r §e{display_name}§r §b•
+setformat VIP §b[§r{prefix}§r§b] §e•§3VIP§e• §a{display_name} §b>> §r§f{msg}
+setnametag VIP global §b•§r §3§lVIP§r §e{display_name}§r §b•
+setformat TopVoter §b[§r{prefix}§r§b] §e•§2TopVoter§e• §a{display_name} §b>> §r§f{msg}
+setnametag TopVoter global §b•§r §2§lTopVoter§r §e{display_name}§r §b•
+setformat Player §b[§r{prefix}§r§b] §e•§dPlayer§e• §a{display_name} §b>> §r§f{msg}
+setnametag Player global §b•§r §d§lPlayer§r §e{display_name}§r §b•
+
+
+
+setgperm Player myplot.claimplots.unlimited
+setgperm Player size.command
+addparent TopVoter Player
+setgperm TopVoter pocketmine.command.teleport
+setgperm TopVoter pocketmine.command.give
+addparent VIP TopVoter
+setgperm VIP pocktmine.command.enchant
+setgperm VIP morph.command
+setgperm VIP last.seen 
+setgperm VIP last.seen.seenlist
+addparent Builder VIP
+setgperm Builder pocketmine.command.gamemode
+setgperm Builder pocketmine.command.time
+setgperm Builder blocksniper
+setgperm Builder itemcase
+setgperm Builder ttdleet
+setgperm Builder logblock.inspect
+setgperm Builder slapper
+setgperm Builder wea
+addparent Mod Builder
+setgperm Mod pocketmine.command.kick
+setgperm Mod pocketmine.command.ban
+setgperm Mod alias
+addparent Admin Mod
+setgperm Admin devban.command
+
+
+
+setgroup KadTheHunter Leader
+setgroup Beccaaaxoxo Leader
+setgroup VentralArt38119 Admin
+setgroup Alexcraft760 Admin
+setgroup paige989 Admin
+setgroup IVExOticVI Admin
+setgroup Switchblade304 Admin
+setgroup KissedStatue Builder
+setgroup WeatherNerd142 Builder
+setgroup Ayzurie Builder
+setgroup casehhh Builder
+setgroup SniperRiffle48 Builder
+setgroup DekuQ10 Builder
+setgroup Kenzie03500 Builder
+setgroup RedChain1987
+setgroup xTrqdz Builder
+setgroup CandyOdayaka Builder
+setgroup Ksome0x Builder
+setgroup DozenErmine9174 Builder
+setgroup ThoughtGoat1610 VIP
+setgroup diamondguy555 VIP
+setgroup LichtTheRipper VIP
