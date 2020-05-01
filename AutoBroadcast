@@ -3,7 +3,6 @@ cmd add ac let %discordmsg% = \"§b§oBe sure and join our Discord! §ehttps://d
 cmd add ac let %nickmsg% = \"§b§oYou can change or set a §eNickname§b with the §e/nick§b Commands!\"
 cmd add ac let %rankmsg% = \"§b§oWant to set a §dRolePlay Rank§b? Use §d/rpranks§b!\"
 cmd add ac let %staffmsg% = \"§b§oLooking to apply for §cStaff§b? Only users who have played here longer than §e1 month§b, and who also have §eDiscord§b can apply!\"
-cmd add ac let %ytmsg% = \"§b§oIf your channel has 15 or more subscribers, and 1 video of XOXO High RolePlay with IP & Port included, you can get the §fYou§cTuber§b Rank!\"
 cmd add ac let %eventmsg% = \"§b§oCheck our Discord and the Boards at Spawn for information about our Weekly §eEvents §band §eChallenges!\"
 cmd add ac let %friendmsg% = \"§b§oYou can add friends and teleport to them with the §e/friend§b command!\"
 cmd add ac # Divider
@@ -14,8 +13,6 @@ cmd add ac sleep 90
 cmd add ac message onlineplayers() %rankmsg%
 cmd add ac sleep 90
 cmd add ac message onlineplayers() %staffmsg%
-cmd add ac sleep 90
-cmd add ac message onlineplayers() %ytmsg%
 cmd add ac sleep 90
 cmd add ac message onlineplayers() %eventmsg%
 cmd add ac sleep 90
