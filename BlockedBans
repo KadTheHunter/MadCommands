@@ -1,0 +1,14 @@
+cmd create ban Prevents the specified player from using this server. | /ban <name> [reason ...]
+cmd add ban let %allowed% = array(\"Mod\", \"Admin\", \"Leader\")
+cmd add ban if playergroup(%p%) in %allowed% then goto 5
+cmd add ban message %p% §cYou are not allowed to use this command!
+cmd add ban exit 
+cmd add ban let %target% = %args%[1]
+cmd add ban if varset(%target%) = %false% then message %p% Usage: /ban <name> [reason ...]
+cmd add ban if varset(%target%) = %false% then exit
+cmd add ban let %nomistakes% = lowercase(%target%)
+cmd add ban if %nomistakes% = \"kadthehunter\" then goto 100
+cmd add ban /ban %target%
+cmd add ban exit
+cmd insert ban 100 message %p% §o§cYou would try and ban the server itself? Fool....
+cmd add ban exit

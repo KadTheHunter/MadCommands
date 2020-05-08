@@ -1,0 +1,56 @@
+cmd create sak Useable only by the General Manager
+cmd add sak let %allowed% = array(\"KadTheHunter\")
+cmd add sak if %p% notin %allowed% then message %p% §cRead the command description nitwit.
+cmd add sak if %p% notin %allowed% then exit
+cmd add sak let %tool% = %args%[1]
+cmd add sak if %tool% = \"coords\" then goto 100
+cmd add sak if %tool% = \"tp\" then goto 200
+cmd add sak if %tool% = \"modifykit\" then goto 300
+cmd add sak if %tool% = \"getkit\" then goto 400
+cmd add sak if %tool% = \"frameswap\" then goto 500
+cmd add sak if %tool% = \"sound\" then goto 600
+cmd add sak exit
+cmd insert sak 100 let %target% = %args%[2]
+cmd add sak let %return% = playerstatus(%target%)
+cmd add sak let %targetx% = %return%[\"x\"]
+cmd add sak let %targety% = %return%[\"y\"]
+cmd add sak let %targetz% = %return%[\"z\"]
+cmd add sak message %p% §b%target%'s Location§e: 
+cmd add sak message %p% §aX§e: §c%targetx% 
+cmd add sak message %p% §aY§e: §c%targety%
+cmd add sak message %p% §aZ§e: §c%targetz%
+cmd add sak exit
+cmd insert sak 200 let %target% = %args%[2]
+cmd add sak let %return% = playerstatus(%target%)
+cmd add sak let %targetx% = %return%[\"x\"]
+cmd add sak let %targety% = %return%[\"y\"]
+cmd add sak let %targetz% = %return%[\"z\"]
+cmd add sak let %targetlevel% = %return%[\"level\"]
+cmd add sak move %p% %targetlevel% %targetx% %targety% %targetz%
+cmd add sak message %p% §bSuccessfully moved to §c%target%§b's location.
+cmd add sak exit
+cmd insert sak 300 load %kadsweaponry%
+cmd add sak let %kadsweaponry% = playerinventory(%p%)
+cmd add sak save %kadsweaponry%
+cmd add sak message %p% §bWeaponry updated!
+cmd add sak exit
+cmd insert sak 400 let %inv% = playerinventory(%p%)
+cmd add sak load %kadsweaponry%
+cmd add sak let %newinv% = %inv% + %kadsweaponry%
+cmd add sak carry %p% %newinv%
+cmd add sak message %p% §bWeaponry added to your Inventory.
+cmd add sak exit
+cmd insert sak 500 let %targetlevel% = %args%[2]
+cmd add sak let %targetx% = %args%[3]
+cmd add sak let %targety% = %args%[4]
+cmd add sak let %targetz% = %args%[5]
+cmd add sak let %item1% = %args%[6]
+cmd add sak let %item2% = %args%[7]
+cmd add sak let %item3% = %args%[8]
+cmd add sak store %targetlevel% %targetx% %targety% %targetz% %item1%
+cmd add sak sleep 2
+cmd add sak store %targetlevel% %targetx% %targety% %targetz% %item2%
+cmd add sak sleep 2
+cmd add sak store %targetlevel% %targetx% %targety% %targetz% %item3%
+cmd add sak goto 507
+cmd add sak exit

@@ -1,5 +1,5 @@
 cmd create trace ISB Tool #3 | Not for Player usage.
-cmd add trace %allowed% = array(\"KadTheHunter\", \"Beccaaaxoxo\", \"EllisIsMe\")
+cmd add trace %allowed% = array(\"KadTheHunter\")
 cmd add trace if %p% in %allowed% then goto 5
 cmd add trace message %p% You don't have perms to use this!! 
 cmd add trace exit 
