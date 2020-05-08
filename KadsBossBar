@@ -1,0 +1,46 @@
+cmd create kbb
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§§\"
+cmd add kbb sleep 1
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Maggickus§r\"
+cmd add kbb sleep 1
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§§\"
+cmd add kbb sleep 1
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lK§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKa§r\" 
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKad§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKadd§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddi§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddic§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicu§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus I§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is M§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Ma§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Mag§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Magg§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Maggi§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Maggic§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Maggick§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Maggicku§r\"
+cmd add kbb sleep 0.5
+cmd add kbb asop /boss title KaddicusIsMaggickus \"§c§o§lKaddicus Is Maggickus§r\"
+cmd add kbb sleep 1
+cmd add kbb goto 1
